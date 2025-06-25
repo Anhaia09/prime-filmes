@@ -38,3 +38,21 @@
     margin-right: 14px;
 }
 
+.area-button button{
+    margin-right: 12px;
+    margin-top: 14px;
+    margin-left: 0;
+    font-size: 14px;
+    border: 0;
+    outline: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgba(26, 205, 255, 0.88);
+    color: #FFF;
+    transition: all 0.3s;
+}
+
+.area-button button:hover{
+    background-color:rgb(0, 176, 225);
+}

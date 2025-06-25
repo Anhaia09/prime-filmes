@@ -1,54 +1,71 @@
-.lista-filmes{
-    max-width: 800px;
-    margin: 14px auto;
+.lista-filmes {
+  max-width: 1200px;
+  margin: 14px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
 }
 
-.loading{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 14px;
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
 }
 
-.lista-filmes article{
-    widht: 100%;
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 4px;
-
+.lista-filmes article {
+  width: 280px;
+  height: 500px; /* Altura padronizada para todos os cards */
+  background-color:rgb(46, 46, 46);
+  padding: 15px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.lista-filmes strong{
-    margin-bottom: 14px;
-    text-align: center;
-    font-size: 22px;
-    display: block;
+.lista-filmes article:hover {
+  transform: scale(1.05);
+  z-index: 1; /* Faz o card “subir” sobre os outros */
 }
 
-.lista-filmes img{
-    width: 900px;
-    max-width: 100%;
-    max-height: 340px;
-    object-fit: cover;
-    display: block;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+
+.lista-filmes strong {
+  height: 50px; /* Reservar espaço fixo para o título */
+  margin-bottom: 14px;
+  text-align: center;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(46, 46, 46);
 }
 
-.lista-filmes a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0;
-    font-size: 24px;
-    background-color: rgb(47, 193, 234);
-    text-decoration: none;
-    color: #ffffff;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+.lista-filmes img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
 }
-
-.lista-filmes a:hover{
-    background-color: rgb(0, 176, 225);
-    transition: all 0.3s;
+.lista-filmes a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  font-size: 18px;
+  background-color: rgb(47, 193, 234);
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 8px;
+  margin-top: auto;
+}
+.lista-filmes a:hover {
+  background-color: rgb(0, 176, 225);
+  transition: all 0.3s;
 }

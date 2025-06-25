@@ -47,10 +47,11 @@
 }
 
 .area-buttons button:hover{
-    background-color:rgb(0, 176, 225);
+    background-color:rgb(0, 148, 189);
 }
 
 .area-buttons button a{
     text-decoration: none;
     color: #FFF;
+    background-color: transparent;
 }

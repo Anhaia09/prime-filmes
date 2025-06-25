@@ -32,7 +32,7 @@ function Favoritos(){
                     return(
                     <li key={item.id}>
                         <span>{item.title}</span>
-                        <div>
+                        <div className='area-button'>
                             <Link to={`/filme/${item.id}`}>Ver detalhes</Link>
                             <button onClick={() => excluirFilme(item.id)}>Excluir</button>
                         </div>
